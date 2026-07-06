@@ -1,0 +1,26 @@
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.header p { color: var(--gray); font-size: 0.9rem; }
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.empty {
+  text-align: center;
+  padding: 4rem;
+  color: var(--gray);
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  font-size: 1.1rem;
+}

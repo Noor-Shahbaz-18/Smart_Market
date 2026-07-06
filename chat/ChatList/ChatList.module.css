@@ -1,0 +1,19 @@
+.list {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--gray);
+}
+
+.empty p {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.empty small {
+  font-size: 0.82rem;
+}
