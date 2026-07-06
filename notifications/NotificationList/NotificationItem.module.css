@@ -1,0 +1,88 @@
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+.item:hover {
+  background: var(--light-gray);
+  box-shadow: var(--shadow);
+}
+
+.unread {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+.iconWrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.message {
+  font-size: 0.9rem;
+  color: var(--dark);
+  line-height: 1.5;
+  margin-bottom: 0.3rem;
+  word-break: break-word;
+}
+
+.time {
+  font-size: 0.78rem;
+  color: var(--gray);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+.deleteBtn {
+  background: none;
+  color: var(--gray);
+  font-size: 0.78rem;
+  padding: 0.15rem 0.3rem;
+  border-radius: var(--radius);
+  transition: color 0.2s, background 0.2s;
+  opacity: 0;
+}
+
+.item:hover .deleteBtn {
+  opacity: 1;
+}
+
+.deleteBtn:hover {
+  color: var(--danger);
+  background: #fee2e2;
+}
