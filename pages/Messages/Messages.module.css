@@ -1,0 +1,61 @@
+.page {
+  height: calc(100vh - 65px);
+  overflow: hidden;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  height: 100%;
+}
+
+.sidebar {
+  border-right: 1.5px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sidebarHeader {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1.5px solid var(--border);
+}
+
+.sidebarHeader h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.chatArea {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.noChatSelected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--gray);
+  gap: 1rem;
+}
+
+.noChatSelected span {
+  font-size: 4rem;
+}
+
+.noChatSelected p {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hideMobile {
+    display: none;
+  }
+}

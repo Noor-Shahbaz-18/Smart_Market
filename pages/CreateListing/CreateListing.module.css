@@ -1,0 +1,50 @@
+.page {}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.header p {
+  color: var(--gray);
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.toggleBtn {
+  padding: 0.75rem 2rem;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  color: var(--gray);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.toggleBtn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+.formWrapper {
+  max-width: 720px;
+  margin: 0 auto;
+}
